@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+class Myclass
+{
+    int v;      // data member defined without access specifier is private 
+    public:     //Access specifier
+    int a;      //Attribute of int variable
+    string s;   //Attribute of string variable
+};
+
+int main()
+{
+    Myclass myobj;      //object of class
+    myobj.a = 5;
+    myobj.s = "Kunal";
+
+    cout<<"a = "<<myobj.a<<"\ns = "<<myobj.s;
+
+    return 0;
+}
