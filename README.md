@@ -7,5 +7,5 @@
                 c) Multilevel
 4. Encapsulation: Data hiding, Data binding
 5. Polymorphism: a) Compile time (overloading)
-                 b) Runtime (overiding)
+                 b) Runtime (overriding)
 6. Data Abstraction
