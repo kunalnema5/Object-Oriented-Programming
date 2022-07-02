@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+// Example of function overloading
+class addition
+{
+    public:
+    void add(int x, int y)
+    {
+         cout<<x+y<<endl;
+    }
+    
+    // same function name with different data type of input parameters
+    void add(double x, double y)
+    {
+         cout<<x+y<<endl;
+    }
+    
+    // same function name with different number of input parameters
+    void add(int x, double y, double z)
+    {
+        cout<<x+y+z<<endl;
+    }
+};
+
+int main()
+{
+    addition myobj;
+    myobj.add(3, 4);
+    myobj.add(2.1, 5.0);
+    myobj.add(2, 2, 5.6);
+}
