@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+
+// Bind data members and methods together (data binding)
+class ma_batch
+{
+    int num_students;  // data hiding (accessible only in this class)
+    
+    public:
+    // get set method to access x inside this class
+    void set(int x)
+    {
+        num_students = x;
+    }
+    
+    int get()
+    {
+        return num_students;
+    }
+};
+
+int main()
+{
+    ma_batch obj;
+    
+    obj.set(21);
+    cout<<"Number of students in MA batch: "<<obj.get()<<endl;
+}
