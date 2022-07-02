@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+class A
+{
+    int a;
+    string b;
+    public:
+    A(){
+        cout<<"Constructor for class A"<<endl;
+    }
+};
+
+class D
+{
+    public:
+    D(){
+    cout<<"This is to test class D"<<endl;}
+};
+
+class B: public A
+{
+    // Cannot access a and b as they are private and are only accessible inside class A
+    int c;
+    public:
+    B(){
+        cout<<"Class B is derived from class A (Single level inheritance)"<<endl;
+    }
+};
+
+class C: public B
+{
+    int y;
+    public:
+    C(){
+        cout<<"Class C is an example of multilevel inheritance"<<endl;
+    }
+};
+
+class E: public A, public D
+{
+    public:
+    E(){
+        cout<<"This is multiple inheritence"<<endl;
+    }
+};
+
+
+int main()
+{
+    // Single level
+    B obj1;
+    cout<<endl;
+
+    // Multilevel
+    C obj2;
+    cout<<endl;
+    
+    // Multiple 
+    E obj3;
+    cout<<endl;
+}
