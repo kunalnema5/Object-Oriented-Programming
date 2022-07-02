@@ -2,7 +2,7 @@
 
 1. Basic Class and Object structure
 2. Constructor
-3. Inheritence: a) Single
+3. Inheritance: a) Single
                 b) Multiple
                 c) Multilevel
 4. Encapsulation: Data hiding, Data binding
