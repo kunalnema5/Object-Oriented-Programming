@@ -4,7 +4,10 @@ using namespace std;
 class A
 {
     int a;
+
+    protected:
     string b;
+
     public:
     A(){
         cout<<"Constructor for class A"<<endl;
@@ -20,10 +23,12 @@ class D
 
 class B: public A
 {
-    // Cannot access a and b as they are private and are only accessible inside class A
+    // Cannot access a it is private and is only accessible inside class A
     int c;
     public:
     B(){
+        b = "HEllO WORLD";    // b can be accessed in derived classes
+        cout<<b<<endl;
         cout<<"Class B is derived from class A (Single level inheritance)"<<endl;
     }
 };
